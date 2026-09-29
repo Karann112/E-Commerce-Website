@@ -129,8 +129,7 @@ function ViewDetails() {
            <div className="border w-[50%] bg-slate-300 border-slate-200 h-6 rounded-lg"></div>
            <div className="border w-[20%] bg-slate-300 border-slate-200 h-6 rounded-lg"></div>
         </div>
-            
-          
+             
       </div>
     );
   }
