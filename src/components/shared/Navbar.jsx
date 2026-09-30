@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { BsCartFill } from "react-icons/bs";
 import { PiShoppingCartSimpleFill } from "react-icons/pi";
+import navbarLogo from "../../assets/NavbarLogo.jpeg"
 import { Link } from "react-router-dom";
 import { ProductContext } from "../../context/ProductContextProvider";
 import { IoHeart } from "react-icons/io5";
@@ -14,7 +15,7 @@ function Navbar() {
         <div className="w-[50%] h-full">
           <img
             className="h-full ml-6"
-            src="src/assets/NavbarLogo.jpeg"
+            src={navbarLogo}
             alt=""
           />
         </div>
