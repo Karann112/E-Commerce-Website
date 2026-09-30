@@ -5,9 +5,7 @@ import LoadingShimmer from "../shared/LoadingShimmer";
 import Button from "../shared/Button";
 import { Link } from "react-router-dom";
 import { IoHeart } from "react-icons/io5";
-import { GoHeart } from "react-icons/go";
-import { AiTwotoneHeart } from "react-icons/ai";
-import { toast, Zoom } from "react-toastify";
+import { toast } from "react-toastify";
 
 function ProductsPage() {
   const {
@@ -99,8 +97,8 @@ function ProductsPage() {
 
       console.log("update whishlisted true in product data", productPageData);
     }
-    // ee.currentTarget.classList.toggle("text-white");
-    // ee.currentTarget.classList.toggle("text-red-500");
+    ee.currentTarget.classList.toggle("text-white");
+    ee.currentTarget.classList.toggle("text-red-500");
   }
 
   async function getProducts() {

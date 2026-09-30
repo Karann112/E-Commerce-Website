@@ -9,6 +9,7 @@ function ProductContextProvider({children}) {
   const [productPageData,setProductPageData] = useState(null)
   const [cartPageData,setCartPageData] = useState([])
   const [wishlistPageData,setWishlistPageData] = useState([])
+  const [userEmail,  setUserEmail] = useState([])
 
   return (
     <ProductContext.Provider value={ {
@@ -17,7 +18,9 @@ function ProductContextProvider({children}) {
         cartPageData,
         setCartPageData,
         wishlistPageData,
-        setWishlistPageData
+        setWishlistPageData,
+        userEmail,
+        setUserEmail
       }}>{children}</ProductContext.Provider>
   )
 }
